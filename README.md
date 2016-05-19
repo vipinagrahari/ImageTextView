@@ -1,4 +1,4 @@
-ImageTextView (1.0)
+ImageTextView (1.0.1)
 ===================
 
 
@@ -31,7 +31,7 @@ How To Use
 #### Include Library in your project ####
 just include the following line your **build.gradle (Module:app)** file and sync project.
 
-    compile 'io.github.vipin.imagetextview:imagetextview:1.0'
+    compile 'io.github.vipin.imagetextview:imagetextview:1.0.1'
 
 After including the library you are all set to use it. Below is a code sample to use **ImageTextView**.
 
