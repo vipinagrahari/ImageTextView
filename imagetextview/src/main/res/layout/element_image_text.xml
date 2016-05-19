@@ -13,7 +13,7 @@
         android:layout_height="56dp"
         android:id="@+id/imageView"
         android:layout_gravity="center"
-        android:src="@drawable/placeholder"
+        android:src="@drawable/male"
         android:scaleType="fitXY" />
 
 
@@ -22,14 +22,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
-
         android:layout_marginTop="8dp">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sherlock Holmes"
+            tools:text="Sherlock Holmes"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -39,7 +38,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textSize="12sp"
-            android:text="221-B Baker Street" />
+            tools:text="221-B Baker Street" />
 
     </LinearLayout>
 

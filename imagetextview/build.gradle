@@ -2,7 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'io.github.vipin.imagetextview'
-version = '1.0'
+version = '1.0.1'
+Properties properties = new Properties()
+properties.load(project.rootProject.file('gradle.properties').newDataInputStream())
 
 android {
     compileSdkVersion 23
@@ -29,6 +31,11 @@ dependencies {
     compile 'com.google.android.gms:play-services-vision:8.4.0'
 
 }
+task printCred(){
+
+    println properties.getProperty("userName")
+    println properties.getProperty("userKey")
+}
 
 task generateSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -53,9 +60,10 @@ artifacts {
     archives generateSourcesJar
 }
 
+
 bintray {
-    user = 'vipinagrahari'
-    key = 'a116a28aa6453873ac894cbb2ea508d40225e9e9'
+    user = properties.getProperty("userName")
+    key =  properties.getProperty("userKey")
     pkg {
         repo = 'maven'
         name = 'io.github.vipin.imagetextview'

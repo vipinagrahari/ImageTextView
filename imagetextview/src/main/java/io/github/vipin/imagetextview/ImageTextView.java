@@ -2,6 +2,7 @@ package io.github.vipin.imagetextview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -32,7 +33,9 @@ public class ImageTextView extends LinearLayout {
                 0,0
         );
         try{
-            roundImageView.setImageDrawable(params.getDrawable(R.styleable.ImageTextView_imageSrc));
+            Drawable drawable=params.getDrawable(R.styleable.ImageTextView_imageSrc);
+            if (drawable==null) drawable=getResources().getDrawable(R.drawable.male);
+            roundImageView.setImageDrawable(drawable);
             title.setText(params.getText(R.styleable.ImageTextView_imageTitle));
             subTitle.setText(params.getText(R.styleable.ImageTextView_imageSubTitle));
         }

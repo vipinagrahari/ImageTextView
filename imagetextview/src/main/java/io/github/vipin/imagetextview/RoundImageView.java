@@ -103,9 +103,6 @@ public class RoundImageView extends ImageView {
 
     public static Bitmap getCroppedBitmap(Bitmap bmp, int radius) {
         Bitmap sbmp;
-        System.out.println("bmpw :" + bmp.getWidth()+"\n"+
-                "bmph :"+ bmp.getHeight()+"\n"+
-                "radius :"+radius);
 
         if (bmp.getWidth() != radius || bmp.getHeight() != radius) {
             float smallest = Math.min(bmp.getWidth(), bmp.getHeight());
@@ -167,7 +164,8 @@ public class RoundImageView extends ImageView {
                     1.5*faceHeight < bmp.getWidth() ? (int)(1.5*faceHeight) : bmp.getHeight());
 
         }
-        return faceBitmap;
+        if(faceBitmap!=null) return faceBitmap;
+        return bmp;
     }
 
 }
