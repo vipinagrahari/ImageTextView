@@ -52,6 +52,11 @@ You have to specify 3 attribute values.
 
 Please Report any issue or suggestions you have.
 
+License
+-------------
+
+[Apache 2.0](https://github.com/vipinagrahari/ImageTextView/edit/master/LICENSE.md)
+
 
 
 
