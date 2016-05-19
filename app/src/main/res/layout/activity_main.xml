@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.www.sample.MainActivity">
+
+
+    <io.github.vipin.imagetextview.ImageTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:imageSrc="@drawable/sherlock"
+        app:imageSubTitle="Benedict Cumberbatch"
+        app:imageTitle="Sherlock Holmes"
+        android:id="@+id/v1"
+        />
+    <io.github.vipin.imagetextview.ImageTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:imageSrc="@drawable/moriarty"
+        app:imageSubTitle="Andrew Scott"
+        app:imageTitle="Jim Moriarty"
+        android:id="@+id/v2"
+        android:layout_below="@id/v1"
+        />
+    <io.github.vipin.imagetextview.ImageTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:imageSrc="@drawable/watson"
+        app:imageSubTitle="Martin Freeman"
+        app:imageTitle="John Watson"
+        android:id="@+id/v3"
+        android:layout_below="@id/v2"
+        />
+</RelativeLayout>
