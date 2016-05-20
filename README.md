@@ -1,4 +1,4 @@
-ImageTextView (1.0.1)
+ImageTextView (1.0.1) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ImageTextView-green.svg?style=true)](https://android-arsenal.com/details/1/3615)
 ===================
 
 
